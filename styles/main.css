@@ -1,0 +1,98 @@
+:root {
+	--color-background: #FFF;
+	--color-foreground: #404040;
+	--color-accent: #1E90FF;
+	--color-dimmed: #D8D8D8;
+
+	--font-body: "Leelawadee", sans-serif;
+	--font-header: "Leelawadee UI Semilight", sans-serif;
+
+	--size-font: 16px;
+	--size-content: 950px;
+	--size-large: 50px;
+	--size-medium: 30px;
+	--size-small: 4px;
+}
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, input, textarea {
+	background-color: var(--color-background);
+	color: var(--color-foreground);
+
+	font-family: var(--font-body);
+	font-size: var(--size-font);
+}
+
+
+/* ====== HEADER ====== */
+header {
+	background-color: var(--color-accent);
+	color: var(--color-background);
+	line-height: var(--size-large);
+}
+
+header nav {
+	margin: 0 auto;
+	max-width: var(--size-content);
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+}
+
+header a {
+	color: var(--color-background);
+}
+
+
+/* ====== MAIN ====== */
+main {
+	margin: var(--size-medium) auto;
+	max-width: var(--size-content);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-header);
+	font-weight: lighter;
+}
+
+a {
+	color: var(--color-accent);
+}
+
+input {
+	margin-bottom: 8px;
+	border: 1px solid;
+	border-radius: var(--size-small);
+	padding: 6px;
+	display: block;
+}
+
+input[type=submit], a.button {
+	background: linear-gradient(var(--color-background), var(--color-dimmed));
+}
+
+input[type=submit]:active, a.button:active {
+	background: linear-gradient(var(--color-dimmed), var(--color-background));
+}
+
+
+/* ====== FOOTER ====== */
+footer {
+	border-top: 1px solid;
+}
+
+footer p {
+	margin: 0 auto;
+	max-width: var(--size-content);
+}
