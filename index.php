@@ -3,7 +3,7 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/examenvoorbereiding_fons/views/header.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-	(new Database('root', 'Mijn Bank van Kennen en Kunnen'))->login($_POST['username'], $_POST['password']);
+	$db->login($_POST['username'], $_POST['password']);
 }
 
 ?>

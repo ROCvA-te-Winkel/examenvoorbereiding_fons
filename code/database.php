@@ -5,10 +5,16 @@ class Database
 {
 	private PDO $pdo;
 
-	public function __construct(string $db_user, string $db_pass)
+	public function __construct(
+		private string $db_user,
+		private string $db_pass,
+		private string $host = 'localhost',
+		private string $dbname = 'examenvoorbereiding_fons',
+		private string $charset = 'utf8mb4',
+	)
 	{
-		$dsn = 'mysql:host=localhost;dbname=examenvoorbereiding_fons;charset=utf8mb4';
-		$this->pdo = new PDO($dsn, $db_user, $db_pass);
+		$dsn = "mysql:host=$this->host;dbname=$this->dbname;charset=$this->charset";
+		$this->pdo = new PDO($dsn, $this->db_user, $this->db_pass);
 	}
 
 	public function create_default_users(): void

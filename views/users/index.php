@@ -2,13 +2,17 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/examenvoorbereiding_fons/views/header.php';
 
-session_start();
+if ($_SESSION['login']['admin']) {
+	?>
 
-echo '<pre>';
-var_dump($_SESSION);
-echo '</pre>';
+	<table>
+		<tr>
+			<th>Rol</th>
+			<th>Gebruikernaam</th>
+			<th>Aangemaakt op</th>
+		</tr>
+	</table>
 
-?>
-
+<?php } ?>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/examenvoorbereiding_fons/views/footer.php' ?>
