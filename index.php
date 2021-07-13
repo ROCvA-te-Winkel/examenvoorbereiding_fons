@@ -15,4 +15,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	<input type="submit" value="Inloggen"/>
 </form>
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/examenvoorbereiding_fons/views/footer.php' ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . $project_path . '/views/footer.php' ?>

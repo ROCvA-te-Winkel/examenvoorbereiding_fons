@@ -2,7 +2,7 @@
 	--color-background: #FFF;
 	--color-foreground: #404040;
 	--color-accent: #1E90FF;
-	--color-dimmed: #D8D8D8;
+	--color-dimmed: #E0E0E0;
 
 	--font-body: "Leelawadee", sans-serif;
 	--font-header: "Leelawadee UI Semilight", sans-serif;
@@ -30,7 +30,7 @@ body, input, textarea {
 }
 
 
-/* ====== HEADER ====== */
+/* ======== HEADER ======== */
 header {
 	background-color: var(--color-accent);
 	color: var(--color-background);
@@ -55,7 +55,7 @@ header a {
 }
 
 
-/* ====== MAIN ====== */
+/* ======== MAIN ======== */
 main {
 	margin: var(--size-medium) auto;
 	max-width: var(--size-content);
@@ -78,6 +78,28 @@ input {
 	display: block;
 }
 
+.error {
+	background-color: red;
+	color: white;
+	font-weight: bold;
+}
+
+a.button {
+	border: 1px solid;
+	border-radius: var(--size-small);
+	padding: 6px;
+	display: inline-block;
+
+	background-color: var(--color-background);
+	color: var(--color-foreground);
+
+	font-family: var(--font-body);
+	font-size: var(--size-font);
+
+	text-decoration: none;
+
+}
+
 input[type=submit], a.button {
 	background: linear-gradient(var(--color-background), var(--color-dimmed));
 }
@@ -86,8 +108,42 @@ input[type=submit]:active, a.button:active {
 	background: linear-gradient(var(--color-dimmed), var(--color-background));
 }
 
+table {
+	border-collapse: collapse;
+}
 
-/* ====== FOOTER ====== */
+table th, table td {
+	border: 1px solid;
+	padding: 4px 8px;
+}
+
+table tr:nth-child(2n + 1) {
+	background-color: var(--color-dimmed);
+}
+
+table tr:first-child {
+	background-color: var(--color-accent);
+	color: var(--color-background);
+}
+
+table th {
+	border-top: none;
+}
+
+table th:last-child, table td:last-child {
+	border-right: none;
+}
+
+table tr:last-child td {
+	border-bottom: none;
+}
+
+table th:first-child, table td:first-child {
+	border-left: none;
+}
+
+
+/* ======== FOOTER ======== */
 footer {
 	border-top: 1px solid;
 }

@@ -1,10 +1,10 @@
-## Examenvoorbereiding voorbeeldcode
+# Examenvoorbereiding voorbeeldcode
 
 Het hele project wat je zou moeten hebben aan het einde van de lessen.
 
 Dit is erg nette code, als je code minder syntax heeft maar verder goed werkt is dat meer dan voldoende.
 
-### Opzet
+## Opzet
 
 Om dit project lokaal te kunnen runnen volg je de volgende stappen:
 
